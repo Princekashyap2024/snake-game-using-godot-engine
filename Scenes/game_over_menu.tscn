@@ -1,0 +1,65 @@
+[gd_scene load_steps=7 format=3 uid="uid://eovxluhni5rq"]
+
+[ext_resource type="FontFile" uid="uid://r5ttqaxnuvgk" path="res://Scenes/assets/MaldiniBold.ttf" id="1_67cf8"]
+[ext_resource type="Script" path="res://Scenes/game_over_menu.gd" id="1_a3mkw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hjkp5"]
+bg_color = Color(0.692067, 2.40654e-07, 0.388451, 1)
+shadow_size = 5
+shadow_offset = Vector2(10, 10)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n7p3r"]
+bg_color = Color(0.73041, 0.143377, 0.828049, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0rai8"]
+bg_color = Color(0.872462, 0.635628, 0.195897, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o7s5w"]
+bg_color = Color(0.14902, 0.6, 0.6, 1)
+
+[node name="GameOverMenu" type="CanvasLayer"]
+script = ExtResource("1_a3mkw")
+
+[node name="GameOverPanel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -125.0
+offset_right = 200.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_hjkp5")
+
+[node name="ResultLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -133.5
+offset_top = -86.0
+offset_right = 133.5
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_67cf8")
+theme_override_font_sizes/font_size = 50
+text = "GAME OVER!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RestartButton" type="Button" parent="."]
+offset_left = 375.0
+offset_top = 545.0
+offset_right = 625.0
+offset_bottom = 608.0
+theme_override_fonts/font = ExtResource("1_67cf8")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxFlat_n7p3r")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_0rai8")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_o7s5w")
+text = "Play Again"
