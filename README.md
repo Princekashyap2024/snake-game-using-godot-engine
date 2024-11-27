@@ -29,7 +29,7 @@ A classic Snake Game built using the **Godot Engine**.
 
 ---
 
-🌟 Customization
+## 🌟 Customization
 <br>
 The game is highly customizable! Here are a few ideas:
 
@@ -39,12 +39,12 @@ Assets: Replace sprites in the project to modify the game’s look and feel.
 
 ---
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License. You are free to use, modify, and distribute it for personal or commercial purposes.
 
 ---
 
-🤝 Contributing
+## 🤝 Contributing
 <br>
 Contributions are welcome! Follow these steps:
 
@@ -54,7 +54,7 @@ Contributions are welcome! Follow these steps:
 
 ---
 
-💌 Questions or Suggestions?
+## 💌 Questions or Suggestions?
 <br>
 Reach out at: amitkumarraikwar92+github@gmail.com
 
